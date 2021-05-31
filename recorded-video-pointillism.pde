@@ -1,6 +1,29 @@
-//import processing.video.*;
-//import controlP5.*;
-/* @pjs preload="LaneNina_9_months_old.mp4"; */
+/**
+* The Memory Bot
+* 
+* Takes a video file and warps the video by incorporating pixelation, 
+* speed adjustment, pixel size, and rate of pixel generation. 
+*
+* Instructions:
+* 
+* Import a .mov or .mp4 file into the data folder in the sketch. 
+* Update line 75 to reflect the file name (include .mov or .mp4)
+* While running the memory bot, the sliders on the right adjust the rate of pixel generation
+* and the size of the pixels. The toggle on the left either gradually increments or 
+* decrements the speed at which the video is being played. 
+* Pressing the 'normal_speed' button lets the video play at its original speed. 
+* To program, hold down any key. 
+* 
+*
+* by Nina Criswell, 2021
+* Midterm project for Form and Code at Wesleyan University
+*
+*/
+
+import controlP5.*;
+
+import processing.video.*;
+import controlP5.*;
 
 Movie mov;
 ControlP5 cp5;
@@ -50,7 +73,7 @@ void setup() {
     .setSize(50, 20)
     ;
 
-  mov = new Movie(this, "testmovie.mov");
+  mov = new Movie(this, "LaneNina_9_months_old.mp4");
   mov.loop();
 }
 
